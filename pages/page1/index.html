@@ -272,9 +272,13 @@
                         }
                     }
                 }else if (deltaY < -10) {
-                    // 下滑逻辑：第一页顶部下滑不跳转（保持在本单元）
+                    // 下滑逻辑：第一页顶部下滑跳转返回到首页
                     if (isShowing) {
                         hideTip();
+                    }
+                    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (scrollTop <= 50) {
+                        window.location.href="../page/index.html";
                     }
                 }
             }
