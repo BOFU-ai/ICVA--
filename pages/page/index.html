@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>乐可为，全球首创小干扰RNA降胆固醇药物</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no">
-    <meta name="TopicID" content="QXD_TOPIC_20250720_001">
-    <meta name="ChapterID" content="QXD_CHAPTER_20250720_001.01">
-    <meta name="PageID" content="QXD_PAGE_20250720_001.01.01">
+    <meta name="TopicID" content="">
+    <meta name="ChapterID" content="">
+    <meta name="PageID" content="">
     <meta name="mcc_code" content="">
     <meta name="key_message" content="乐可为，全球首创小干扰RNA降胆固醇药物">
     <link rel="stylesheet" href="../../css/reset.css">
@@ -173,7 +173,7 @@
 
 <!-- 修改提示文本 -->
 <div class="tip">
-    本页已阅读结束<br>继续上滑，进入患者档案单元
+    本页已阅读结束<br>继续上滑，进入本单元下一页
 </div>
 <script>
     const modal = new ImageModal({
@@ -254,7 +254,7 @@
                 const endY = e.changedTouches[0].pageY;
                 const deltaY = startY - endY; 
                 
-                // 上滑逻辑：第一页上滑到下一单元
+                // 上滑逻辑：第一页上滑到本单元第二页
                 if (deltaY > 15) {
                     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
                     const windowHeight = document.documentElement.clientHeight;
@@ -263,7 +263,7 @@
                         if (!isShowing) {
                             showTip();
                         }else{
-                            // 跳转到下一单元
+                            // 跳转到第一个单元
                             window.location.href="../page1/index.html";
                         }
                     }else{
