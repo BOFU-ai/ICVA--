@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>乐可为，全球首创小干扰RNA降胆固醇药物</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,user-scalable=no">
-    <meta name="TopicID" content="QXD_TOPIC_20250720_001">
-    <meta name="ChapterID" content="QXD_CHAPTER_20250720_001.01">
-    <meta name="PageID" content="QXD_PAGE_20250720_001.01.01">
+    <meta name="TopicID" content="">
+    <meta name="ChapterID" content="">
+    <meta name="PageID" content="">
     <meta name="mcc_code" content="">
     <meta name="key_message" content="乐可为，全球首创小干扰RNA降胆固醇药物">
     <link rel="stylesheet" href="../../css/reset.css">
@@ -162,10 +162,10 @@
         </div>
         <div class="list" style="display: none">
             <!-- 菜单改为第一个单元的两页 -->
-            <div class="mbg"><a href="../page1/index.html" class=""><i></i>患者档案</a></div>
-            <div class="mbg hover"><a href="../page2/index.html" class=""><i></i>主要风险</a></div>
+            <div class="mbg"><a href="../page1/index.html" class=""><i></i>患者画像</a></div>
+            <div class="mbg hover"><a href="../page2/index.html" class=""><i></i>术后风险</a></div>
             <div class="mbg"><a href="../page3/index.html" class=""><i></i>降脂现状</a></div>
-            <div class="mbg"><a href="../page4/index.html" class=""><i></i>最佳选择</a></div>
+            <div class="mbg"><a href="../page4/index.html" class=""><i></i>全新优选</a></div>
             <div class="mbg"><a href="../page5/index.html" class=""><i></i>简明处方</a></div>
         </div>
     </div>
@@ -263,7 +263,7 @@
                         if (!isShowing) {
                             showTip();
                         }else{
-                            // 跳转到第一个单元的第二页
+                            // 跳转到下一页
                             window.location.href="../page2/index2.html";
                         }
                     }else{
@@ -272,7 +272,7 @@
                         }
                     }
                 }else if (deltaY < -10) {
-                    // 下滑逻辑：第一页顶部下滑跳转返回到首页
+                    // 下滑逻辑：第一页顶部下滑跳转（保持在本单元）
                     if (isShowing) {
                         hideTip();
                     }
